@@ -36,7 +36,7 @@ FetchrLy is an end-to-end AI career outreach platform. It helps candidates disco
 ## System Architecture
 
 <p align="center">
-  <img src="diagrams/system-architecture.svg" alt="System Architecture">
+  <img src="system-architecture.svg" alt="System Architecture">
 </p>
 
 ---
@@ -44,7 +44,7 @@ FetchrLy is an end-to-end AI career outreach platform. It helps candidates disco
 ## Core Workflow
 
 <p align="center">
-  <img src="diagrams/core-workflow.svg" alt="Core Workflow">
+  <img src="core-workflow.svg" alt="Core Workflow">
 </p>
 
 ---
@@ -68,7 +68,7 @@ FetchrLy is an end-to-end AI career outreach platform. It helps candidates disco
 ## Automated Follow-Up Logic
 
 <p align="center">
-  <img src="diagrams/follow-up-logic.svg" alt="Automated Follow-Up Logic">
+  <img src="follow-up-logic.svg" alt="Automated Follow-Up Logic">
 </p>
 
 Follow-up drafts inherit the resume version (original or tailored) used in the initial outreach. Cancelled sequences retain their planned drafts for auditability.
