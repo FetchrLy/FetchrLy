@@ -1,0 +1,70 @@
+<svg viewBox="0 0 780 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="780" height="440" fill="#ffffff"/>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#57606a"/>
+  </marker>
+</defs>
+
+<!-- Day 0 - Initial Email -->
+<rect x="205.0" y="20" width="230" height="50" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.3"/>
+<text x="320.0" y="49.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Day 0 - Initial Email</text>
+
+<!-- Alternate value proposition -->
+<rect x="365.0" y="260" width="210" height="50" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.3"/>
+<text x="470.0" y="289.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Alternate value proposition</text>
+
+<!-- Interest bump referencing portfolio or metrics -->
+<rect x="35.0" y="250" width="230" height="62" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.3"/>
+<text x="150.0" y="276.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Interest bump referencing</text>
+<text x="150.0" y="294.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">portfolio or metrics</text>
+
+<!-- Day 7-8 - Breakup Note -->
+<rect x="210.0" y="360" width="220" height="50" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.3"/>
+<text x="320.0" y="389.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Day 7-8 - Breakup Note</text>
+
+<!-- 1-Click Cancel -->
+<rect x="595.0" y="155" width="150" height="50" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.3"/>
+<text x="670.0" y="184.3" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">1-Click Cancel</text>
+
+<!-- Decision diamond: Opened by Day 3-4? -->
+<polygon points="320,110.0 445.0,160 320,210.0 195.0,160" fill="#fff8c5" stroke="#1f2328" stroke-width="1.3"/>
+<text x="320" y="155.8" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Opened by</text>
+<text x="320" y="172.8" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Day 3-4?</text>
+
+<!-- Arrow: Initial Email → Diamond -->
+<path d="M 320.0 70 L 320 110" fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+<!-- Arrow: Diamond → Interest Bump (Yes) -->
+<path d="M 245 195 L 175 250" fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="175.995" y="208.225" width="28.009999999999998" height="17.25" fill="#ffffff"/>
+<text x="190" y="221.22" text-anchor="middle" font-size="11.5" fill="#57606a">Yes</text>
+
+<!-- Arrow: Diamond → Alt Value Prop (No) -->
+<path d="M 395 195 L 445 260" fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="419.33" y="208.225" width="21.34" height="17.25" fill="#ffffff"/>
+<text x="430" y="221.22" text-anchor="middle" font-size="11.5" fill="#57606a">No</text>
+
+<!-- Arrow: Interest Bump → Breakup Note: direct -->
+<path d="M 150 312 L 280 360"
+      fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+<!-- Arrow: Alt Value Prop → Breakup Note: separate clean lane -->
+<path d="M 470 310 L 470 340 L 390 340 L 390 360"
+      fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+<!-- Day 0 - Initial Email → 1-Click Cancel -->
+<path d="M 435 45 L 530 45 L 530 125 L 620 125 L 620 155"
+      fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="475" y="48" width="105" height="17" fill="#ffffff"/>
+<text x="527.5" y="60.5" text-anchor="middle" font-size="11" fill="#57606a">Reply received</text>
+
+<!-- Interest Bump → 1-Click Cancel: far outside, below Breakup Note -->
+<path d="M 35 281 L 15 281 L 15 435 L 690 435 L 690 205"
+      fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+<!-- Alternate Value Proposition → 1-Click Cancel: route below its box -->
+<path d="M 575 285 L 610 285 L 610 330 L 720 330 L 720 205"
+      fill="none" stroke="#57606a" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+</svg>
