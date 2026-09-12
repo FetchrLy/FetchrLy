@@ -125,9 +125,7 @@ Follow-up drafts inherit the resume version (original or tailored) used in the i
 | Resource | URL |
 |---|---|
 | Website | https://fetchrly.co.in |
-| Application | https://fetchrly.co.in/app |
 | Documentation | https://fetchrly.co.in/how-it-works |
-| Recruiter Discovery | https://fetchrly.co.in/app/jobs |
 | Contact | fetchrly@gmail.com |
 | LinkedIn | https://www.linkedin.com/company/fetchrly |
 | Instagram | https://www.instagram.com/fetchrly/ |
