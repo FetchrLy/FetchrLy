@@ -4,7 +4,9 @@
 
 # FetchrLy — AI Cold Email Agent, Smart Follow-Up Sequences & ATS Resume Tailoring
 
-[![Status](https://img.shields.io/badge/status-proprietary-555555.svg)](https://fetchrly.co.in/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/fetchrly)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/fetchrly/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/FetchrLy)
 
 **Live platform:** [fetchrly.co.in](https://fetchrly.co.in/)
 
@@ -33,55 +35,17 @@ FetchrLy is an end-to-end AI career outreach platform. It helps candidates disco
 
 ## System Architecture
 
-```mermaid
-flowchart TB
-    subgraph Client
-        FE["React 19 + TypeScript<br/>Vite SPA"]
-    end
-
-    subgraph Server["Backend (Render)"]
-        API["FastAPI Application"]
-        DB[(PostgreSQL)]
-        Cache[(Redis)]
-    end
-
-    subgraph Integrations["External Services"]
-        Gmail["Gmail API"]
-        LLM["LLM Providers<br/>Gemini / Groq / NVIDIA"]
-        Jobs["Adzuna Jobs API"]
-        Storage["Supabase Storage"]
-        Mail["Brevo"]
-        Pay["Dodo Payments"]
-    end
-
-    FE <--> API
-    API <--> DB
-    API <--> Cache
-    API <--> Gmail
-    API <--> LLM
-    API <--> Jobs
-    API <--> Storage
-    API <--> Mail
-    API <--> Pay
-```
+<p align="center">
+  <img src="diagrams/system-architecture.svg" alt="System Architecture">
+</p>
 
 ---
 
 ## Core Workflow
 
-```mermaid
-flowchart LR
-    R[Resume Upload] --> AF[AI Profile Autofill]
-    AF --> JS[Live Job Search]
-    AF --> RT[ATS Resume Tailoring]
-    JS --> RD[Recruiter Discovery]
-    RD --> CE[AI Cold Email Draft]
-    RT --> CE
-    CE --> AM[Authenticity Check]
-    AM --> GM[Gmail Dispatch]
-    GM --> OT[Open Tracking]
-    OT --> FU[Automated Follow-Up Sequence]
-```
+<p align="center">
+  <img src="diagrams/core-workflow.svg" alt="Core Workflow">
+</p>
 
 ---
 
@@ -103,17 +67,9 @@ flowchart LR
 
 ## Automated Follow-Up Logic
 
-```mermaid
-flowchart TD
-    A["Day 0 - Initial Email"] --> B{"Opened by Day 3-4?"}
-    B -->|Yes| C["Interest bump referencing<br/>portfolio or metrics"]
-    B -->|No| D["Alternate value proposition"]
-    C --> E["Day 7-8 - Breakup Note"]
-    D --> E
-    A -.->|Reply received| X["1-Click Cancel"]
-    C -.->|Reply received| X
-    D -.->|Reply received| X
-```
+<p align="center">
+  <img src="diagrams/follow-up-logic.svg" alt="Automated Follow-Up Logic">
+</p>
 
 Follow-up drafts inherit the resume version (original or tailored) used in the initial outreach. Cancelled sequences retain their planned drafts for auditability.
 
@@ -184,5 +140,3 @@ Follow-up drafts inherit the resume version (original or tailored) used in the i
 Copyright © 2026 FetchrLy (fetchrly.co.in). All rights reserved.
 
 This repository contains proprietary software and architectural specifications for the FetchrLy platform. Unauthorized copying, modification, redistribution, or commercial reproduction of this code, or any portion of it, without explicit written permission from FetchrLy is strictly prohibited.
-
-<p align="center">Manas Rohilla · FetchrLy</p>
